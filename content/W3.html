@@ -1,0 +1,191 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923117 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923117 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a><li class='has-children'><a href='Ahoy!.html'>Ahoy!</a><ul class='dropdown'><li class='has-children'><a href='Date.html'>Date</a><ul class='dropdown'><li><a href='W1.html'>W1</a><li><a href='W2.html'>W2</a><li><a href='W3.html'>W3</a><li><a href='W5.html'>W5</a></li></ul><li class='has-children'><a href='Python 指令集.html'>Python 指令集</a><ul class='dropdown'><li><a href='for 語法.html'>for 語法</a><li><a href='if 語法.html'>if 語法</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">W2 << <a href='W2.html'>Previous</a> <a href='W5.html'>Next</a> >> W5<br /><h1>W3</h1>
+<p><span>完成亂數分組和分組倉儲  每班分成五組 </span></p>
+<p>1a</p>
+<p>group 1:<br/><br/>Repository:<span> </span><a href="https://github.com/40923102/cp2020">40923102</a><span> </span>| Site:<span> </span><a href="https://40923102.github.io/cp2020">40923102</a><br/>Repository:<span> </span><a href="https://github.com/40923103/cp2020">40923103</a><span> </span>| Site:<span> </span><a href="https://40923103.github.io/cp2020">40923103</a><br/>Repository:<span> </span><a href="https://github.com/40923117/cp2020">40923117</a><span> </span>| Site:<span> </span><a href="https://40923117.github.io/cp2020">40923117</a><br/>Repository:<span> </span><a href="https://github.com/40923119/cp2020">40923119</a><span> </span>| Site:<span> </span><a href="https://40923119.github.io/cp2020">40923119</a><br/>Repository:<span> </span><a href="https://github.com/40923123/cp2020">40923123</a><span> </span>| Site:<span> </span><a href="https://40923123.github.io/cp2020">40923123</a><span> </span>(組長)<br/>Repository:<span> </span><a href="https://github.com/40923127/cp2020">40923127</a><span> </span>| Site:<span> </span><a href="https://40923127.github.io/cp2020">40923127</a><br/>Repository:<span> </span><a href="https://github.com/40923131/cp2020">40923131</a><span> </span>| Site:<span> </span><a href="https://40923131.github.io/cp2020">40923131</a><br/>Repository:<span> </span><a href="https://github.com/40923133/cp2020">40923133</a><span> </span>| Site:<span> </span><a href="https://40923133.github.io/cp2020">40923133</a><br/>Repository:<span> </span><a href="https://github.com/40923141/cp2020">40923141</a><span> </span>| Site:<span> </span><a href="https://40923141.github.io/cp2020">40923141</a><br/>Repository:<span> </span><a href="https://github.com/40923144/cp2020">40923144</a><span> </span>| Site:<span> </span><a href="https://40923144.github.io/cp2020">40923144</a><br/>Repository:<span> </span><a href="https://github.com/40923148/cp2020">40923148</a><span> </span>| Site:<span> </span><a href="https://40923148.github.io/cp2020">40923148</a><br/>Repository:<span> </span><a href="https://github.com/40923149/cp2020">40923149</a><span> </span>| Site:<span> </span><a href="https://40923149.github.io/cp2020">40923149</a><br/><br/><br/>==============================<br/><br/>group 2:<br/><br/>Repository:<span> </span><a href="https://github.com/40623219/cp2020">40623219</a><span> </span>| Site:<span> </span><a href="https://40623219.github.io/cp2020">40623219</a><br/>Repository:<span> </span><a href="https://github.com/40923101/cp2020">40923101</a><span> </span>| Site:<span> </span><a href="https://40923101.github.io/cp2020">40923101</a><br/>Repository:<span> </span><a href="https://github.com/40923104/cp2020">40923104</a><span> </span>| Site:<span> </span><a href="https://40923104.github.io/cp2020">40923104</a><br/>Repository:<span> </span><a href="https://github.com/40923107/cp2020">40923107</a><span> </span>| Site:<span> </span><a href="https://40923107.github.io/cp2020">40923107</a><br/>Repository:<span> </span><a href="https://github.com/40923115/cp2020">40923115</a><span> </span>| Site:<span> </span><a href="https://40923115.github.io/cp2020">40923115</a><br/>Repository:<span> </span><a href="https://github.com/40923124/cp2020">40923124</a><span> </span>| Site:<span> </span><a href="https://40923124.github.io/cp2020">40923124</a><br/>Repository:<span> </span><a href="https://github.com/40923125/cp2020">40923125</a><span> </span>| Site:<span> </span><a href="https://40923125.github.io/cp2020">40923125</a><span> </span>(組長)<br/>Repository:<span> </span><a href="https://github.com/40923136/cp2020">40923136</a><span> </span>| Site:<span> </span><a href="https://40923136.github.io/cp2020">40923136</a><br/>Repository:<span> </span><a href="https://github.com/40923142/cp2020">40923142</a><span> </span>| Site:<span> </span><a href="https://40923142.github.io/cp2020">40923142</a><br/>Repository:<span> </span><a href="https://github.com/40923151/cp2020">40923151</a><span> </span>| Site:<span> </span><a href="https://40923151.github.io/cp2020">40923151</a><br/>Repository:<span> </span><a href="https://github.com/40923152/cp2020">40923152</a><span> </span>| Site:<span> </span><a href="https://40923152.github.io/cp2020">40923152</a><br/><br/><br/>==============================<br/><br/>group 3:<br/><br/>Repository:<span> </span><a href="https://github.com/s40723154/cp2020">40723154</a><span> </span>| Site:<span> </span><a href="https://s40723154.github.io/cp2020">40723154</a><br/>Repository:<span> </span><a href="https://github.com/40828127/cp2020">40828127</a><span> </span>| Site:<span> </span><a href="https://40828127.github.io/cp2020">40828127</a><br/>Repository:<span> </span><a href="https://github.com/40923106/cp2020">40923106</a><span> </span>| Site:<span> </span><a href="https://40923106.github.io/cp2020">40923106</a><br/>Repository:<span> </span><a href="https://github.com/40923108/cp2020">40923108</a><span> </span>| Site:<span> </span><a href="https://40923108.github.io/cp2020">40923108</a><br/>Repository:<span> </span><a href="https://github.com/40923118/cp2020">40923118</a><span> </span>| Site:<span> </span><a href="https://40923118.github.io/cp2020">40923118</a><br/>Repository:<span> </span><a href="https://github.com/40923120/cp2020">40923120</a><span> </span>| Site:<span> </span><a href="https://40923120.github.io/cp2020">40923120</a><br/>Repository:<span> </span><a href="https://github.com/40923126-1/cp2020">40923126</a><span> </span>| Site:<span> </span><a href="https://40923126-1.github.io/cp2020">40923126</a><span> </span>(組長)<br/>Repository:<span> </span><a href="https://github.com/40923128/cp2020">40923128</a><span> </span>| Site:<span> </span><a href="https://40923128.github.io/cp2020">40923128</a><br/>Repository:<span> </span><a href="https://github.com/40923138/cp2020">40923138</a><span> </span>| Site:<span> </span><a href="https://40923138.github.io/cp2020">40923138</a><br/>Repository:<span> </span><a href="https://github.com/40923145/cp2020">40923145</a><span> </span>| Site:<span> </span><a href="https://40923145.github.io/cp2020">40923145</a><br/>Repository:<span> </span><a href="https://github.com/40923150/cp2020">40923150</a><span> </span>| Site:<span> </span><a href="https://40923150.github.io/cp2020">40923150</a><br/><br/><br/>==============================<br/><br/>group 4:<br/><br/>Repository:<span> </span><a href="https://github.com/40923113/cp2020">40923113</a><span> </span>| Site:<span> </span><a href="https://40923113.github.io/cp2020">40923113</a><br/>Repository:<span> </span><a href="https://github.com/40923114/cp2020">40923114</a><span> </span>| Site:<span> </span><a href="https://40923114.github.io/cp2020">40923114</a><br/>Repository:<span> </span><a href="https://github.com/40923116/cp2020">40923116</a><span> </span>| Site:<span> </span><a href="https://40923116.github.io/cp2020">40923116</a><span> </span>(組長)<br/>Repository:<span> </span><a href="https://github.com/40923121/cp2020">40923121</a><span> </span>| Site:<span> </span><a href="https://40923121.github.io/cp2020">40923121</a><br/>Repository:<span> </span><a href="https://github.com/40923129/cp2020">40923129</a><span> </span>| Site:<span> </span><a href="https://40923129.github.io/cp2020">40923129</a><br/>Repository:<span> </span><a href="https://github.com/a40923137/cp2020">40923137</a><span> </span>| Site:<span> </span><a href="https://a40923137.github.io/cp2020">40923137</a><br/>Repository:<span> </span><a href="https://github.com/40923140/cp2020">40923140</a><span> </span>| Site:<span> </span><a href="https://40923140.github.io/cp2020">40923140</a><br/>Repository:<span> </span><a href="https://github.com/40923146/cp2020">40923146</a><span> </span>| Site:<span> </span><a href="https://40923146.github.io/cp2020">40923146</a><br/>Repository:<span> </span><a href="https://github.com/40923147/cp2020">40923147</a><span> </span>| Site:<span> </span><a href="https://40923147.github.io/cp2020">40923147</a><br/><br/><br/>==============================<br/><br/>group 5:<br/><br/>Repository:<span> </span><a href="https://github.com/40923105/cp2020">40923105</a><span> </span>| Site:<span> </span><a href="https://40923105.github.io/cp2020">40923105</a><br/>Repository:<span> </span><a href="https://github.com/40923109/cp2020">40923109</a><span> </span>| Site:<span> </span><a href="https://40923109.github.io/cp2020">40923109</a><br/>Repository:<span> </span><a href="https://github.com/40923110/cp2020">40923110</a><span> </span>| Site:<span> </span><a href="https://40923110.github.io/cp2020">40923110</a><br/>Repository:<span> </span><a href="https://github.com/40923111/cp2020">40923111</a><span> </span>| Site:<span> </span><a href="https://40923111.github.io/cp2020">40923111</a><br/>Repository:<span> </span><a href="https://github.com/40923122/cp2020">40923122</a><span> </span>| Site:<span> </span><a href="https://40923122.github.io/cp2020">40923122</a><br/>Repository:<span> </span><a href="https://github.com/40923130/cp2020">40923130</a><span> </span>| Site:<span> </span><a href="https://40923130.github.io/cp2020">40923130</a><br/>Repository:<span> </span><a href="https://github.com/40923134/cp2020">40923134</a><span> </span>| Site:<span> </span><a href="https://40923134.github.io/cp2020">40923134</a><br/>Repository:<span> </span><a href="https://github.com/40923135/cp2020">40923135</a><span> </span>| Site:<span> </span><a href="https://40923135.github.io/cp2020">40923135</a><span> </span>(組長)<br/>Repository:<span> </span><a href="https://github.com/40923139/cp2020">40923139</a><span> </span>| Site:<span> </span><a href="https://40923139.github.io/cp2020">40923139</a><br/>Repository:<span> </span><a href="https://github.com/40923143/cp2020">40923143</a><span> </span>| Site:<span> </span><a href="https://40923143.github.io/cp2020">40923143</a><br/>Repository:<span> </span><a href="https://github.com/40923153/cp2020">40923153</a><span> </span>| Site:<span> </span><a href="https://40923153.github.io/cp2020">40923153</a></p>
+<p></p>
+<br />W2 << <a href='W2.html'>Previous</a> <a href='W5.html'>Next</a> >> W5</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
