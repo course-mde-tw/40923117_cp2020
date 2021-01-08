@@ -65,6 +65,74 @@
 <p><span><span>RAM也根據存儲芯片類型進行分類。過去，系統根據製造商使用不同類型的芯片，但是當前的系統大多使用相同類型的芯片，通常是DDR（雙倍資料率），DDR2或DDR3。儘管DDR是最常見的類型，但某些獨特的系統可能會使用RDRAM（Rambus(公司)<b>動態隨機存取記憶體</b>）。</span></span></p>
 <p>另一個RAM分類基於速度。較舊的內存以納秒（例如60納秒）分類。隨著時間的流逝，所有內存變為幾乎相同的速度（以納秒為單位），因此他們將其更改為總線速度（例如，PC-133內存以133 MHz的總線速度運行）。現在，大多數當代內存都是通過吞吐量來衡量的（PC2-6400，運行於800 MHz，但具有6.4 GBps的帶寬）。</p>
 <p>最後，可以使用奇偶校驗，非奇偶校驗或ECC購買存儲器並按其分類。奇偶校驗存儲器在將數據讀/寫到芯片時檢查錯誤。儘管奇偶校驗內存可以檢測到錯誤，但無法糾正錯誤。非奇偶校驗內存是台式計算機中最常見的類型之一，沒有錯誤檢查功能。糾錯碼（ECC）是奇偶校驗的高級版本，可以發現錯誤並在從芯片讀取/寫入該錯誤時對其進行糾正。由於這些附加功能，ECC往往比等效的非奇偶校驗RAM慢。</p>
+<h3>基於主板確定內存類型</h3>
+<p id="N10688" lang="">Different types of RAM have been in common use during different time periods. It is important to understand them all, because many companies use a mix of legacy systems and more current ones. DRAM, or dynamic RAM, is one of the oldest types. It requires frequent refreshing of contents. DRAM stores each bit of data or program code in a storage cell consisting of a capacitor and a transistor, and is typically organized in a rectangular configuration of storage cells. A DRAM storage cell is dynamic in that it needs to be refreshed or given a new electronic charge every few milliseconds to compensate for charge leaks from the capacitor.</p>
+<p id="N1068B" lang="">SRAM, or static RAM, solved the issue of the need for constant refreshing, but it is quite expensive to manufacture. Therefore, SRAM is only used for very high-speed needs, such as level 1, level 2, and level 3 CPU caches, hard drive buffers, and LCD screen buffers.</p>
+<p id="N1068E" lang="">SDRAM, or synchronous DRAM, was the first memory that operated at the same speed as the motherboard’s bus. The initial chips were 168-pin dual in-line memory modules, which have their speed rated in MHz. Common naming conventions include PC-66 (which is equivalent to 66 Mhz), or PC-133, or PC-266.</p>
+<p id="N10691" lang="">While SDRAM performs at the same speed as the motherboard’s bus, the CPU operates many times faster than the motherboard’s bus. DDR SDRAM stands for double data rate synchronous dynamic random access memory. This type of memory can transfer data two times per clock cycle, thereby doubling the speed over traditional SDRAM. These chips come in 184-pin varieties, rated in MBps (throughput). A good example of this is something like PC-1600, which is 1600 MBps throughput.</p>
+<p id="N10694" lang="">DDR2 SDRAM is double double data rate SDRAM, which has a higher<span> </span><a aria-describedby="N10698" class="extra" id=""></a>latency<span> </span>but faster access to the external bus. These chips have 240 pins to connect their modules to the slot, and are also rated in MBps, such as PC2-4200, which is 4200 MBps (or 4.2 GBps).</p>
+<p id="N1069F" lang="">DDR3 SDRAM is known as double data rate 3 SDRAM, and is the latest generation of SDRAM in use today. It runs at a lower voltage and is faster than DDR2, but again the latency is increased over the previous DDR2 modules. These modules also have 240 pins, but they are “keyed” differently than DDR2. The “keyed” portion is where the gap in the pins is located, so only a DDR2 will fit in a DDR2 slot, and a DDR3 will fit only in a DDR3 slot. The common notation for these is PC3-10600, where the 10600 is the speed in MBps.</p>
+<p id="N106A2" lang="">Rambus direct ram (RDRAM) is also known as RIMM (Rambus in-line memory module). These modules come in a 184-pin variant (16-bit version) and a 232-pin variant (32-bit version). Each empty slot in the motherboard has to have a continuity module (CRIMM) placed inside it, or the motherboard won’t recognize the memory properly. This is not used in recent systems, but was used heavily in Pentium 4 systems. The RDRAM is measured in MBps, such as RIMM 4200 (or 4200 MBps).</p>
+<p id="N10702" lang=""><span><span>您需要使用的內存類型由主板決定。</span><span>最佳做法是在購買新模塊之前，檢查主板手冊中的內存類型，大小和速度是否合適。</span><span>某些主板可讓您混合使用模塊的大小，而另一些則要求所有模塊的大小均相同。</span><span>例如，如果母板上有兩個內存插槽，則可能允許您在一個插槽中放置一個1 GB的模塊，在另一個插槽中放置一個2 GB的模塊。</span><span>其他主板要求所有插槽中都具有相同大小的芯片，例如兩個插槽中都有1 GB的模塊。</span><span>要考慮的另一個因素是主板的“庫”大小。</span><span>一些主板支持一組，這意味著您可以在主板中使用單個模塊。</span><span>其他主板需要兩個模塊來完成存儲（插槽必須成對填充）。</span></span></p>
+<p id="N10705" lang=""><span><span>主板可能支持的另一個功能稱為雙通道或三通道。</span><span>在這些通道模式下，母板要求用戶在兩個（雙）或三個（三重）插槽中安裝相同尺寸和速度的模塊。</span><span>這樣可以交錯訪問內存，以加快內存的性能，從而加快計算機的運行速度。</span><span>考慮一下交錯，就好像您有兩匹馬拉著一輛馬車而不是一輛。</span><span>雖然每匹馬可能自己可以拉100磅，但它們合起來可以拉250磅。</span><span>在內存上下文中進行交織是相同的想法—交織內存時訪問速度會提高。</span><span>一起訪問兩個內存芯片的總和比單獨訪問一個芯片更快。</span></span></p>
+<p id="N10708" lang=""><span><span>最後，可以安裝的模塊總數也由主板的外形尺寸決定。</span><span>如果您使用的是較小型的主板，例如mini-ATX，則其模塊插槽可能會更少（也許是兩個插槽，而完整的ATX板上則是四個或六個）。</span></span></p>
+<p id="N10688" lang=""><span>在不同時間段內，通常使用不同類型的RAM。了解所有這些信息非常重要，因為許多公司使用的都是舊系統和最新系統。DRAM或動態RAM是最古老的類型之一。它需要經常刷新內容。DRAM將數據或程序代碼的每一位存儲在由電容器和晶體管組成的存儲單元中，並且通常以矩形配置的存儲單元來組織。DRAM存儲單元是動態的，因為它需要每幾毫秒刷新一次或給其提供新的電荷，以補償電容器的電荷洩漏。</span></p>
+<p id="N1068B" lang=""><span><span>SRAM或靜態RAM解決了不斷刷新的問題，但製造成本很高。</span><span>因此，SRAM僅用於非常高速的需求，例如1級，2級和3級CPU高速緩存，硬盤驅動器緩衝區和LCD屏幕緩衝區。</span></span></p>
+<p id="N1068E" lang=""><span><span>SDRAM或同步DRAM是第一個以與主板總線相同的速度運行的內存。</span><span>最初的芯片是168針雙列直插式內存模塊，其速度額定為MHz。</span><span>常見的命名約定包括PC-66（相當於66 Mhz），PC-133或PC-266。</span></span></p>
+<p id="N10691" lang=""><span><span>儘管SDRAM的運行速度與主板總線相同，但CPU的運行速度卻比主板總線快許多倍。</span><span>DDR SDRAM代表雙倍數據速率同步動態隨機存取存儲器。</span><span>這種類型的存儲器可以在每個時鐘週期兩次傳輸數據，從而使速度比傳統SDRAM快一倍。</span><span>這些芯片有184引腳的型號，額定為MBps（吞吐量）。</span><span>一個很好的例子就是PC-1600，吞吐量為1600 MBps。</span></span></p>
+<p id="N10694" lang=""><span><span>DDR2 SDRAM是雙倍數據速率SDRAM，具有更高的<span> </span></span></span><a aria-describedby="N10698" class="extra" id=""></a><span><span>延遲，</span></span><span><span><span> </span>但對外部總線的訪問速度更快。</span><span>這些芯片具有240個引腳以將其模塊連接到插槽，並且還以MBps額定，例如PC2-4200，即4200 MBps（或4.2 GBps）。</span></span></p>
+<p id="N1069F" lang=""><span><span>DDR3 SDRAM被稱為雙倍數據速率3 SDRAM，是當今使用的最新一代SDRAM。</span><span>它在較低的電壓下運行，並且比DDR2更快，但是與之前的DDR2模塊相比，延遲又增加了。</span><span>這些模塊還具有240針，但是它們的“鍵控”與DDR2不同。</span><span>“鍵控”部分是引腳之間的間隙所在的位置，因此只有DDR2可以插入DDR2插槽，而DDR3只能插入DDR3插槽。</span><span>這些的常用符號是PC3-10600，其中10600是MBps的速度。</span></span></p>
+<p id="N106A2" lang=""><span><span>Rambus直接RAM（RDRAM）也被稱為RIMM（Rambus嵌入式存儲模塊）。</span><span>這些模塊具有184針變體（16位版本）和232針變體（32位版本）。</span><span>主板上的每個空插槽都必須在其中放置一個連續性模塊（CRIMM），否則主板將無法正確識別內存。</span><span>在最近的系統中未使用此功能，但在Pentium 4系統中大量使用了此功能。</span><span>RDRAM以MBps為單位進行測量，例如RIMM 4200（或4200 MBps）。</span></span></p>
+<p lang=""><span><span><img alt="隨機存取存儲器" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH06/webcontent/PCH06/image4.jpg"/></span></span></p>
+<h3><span><span>Memory Module Width 記憶體模塊寬度</span></span></h3>
+<p lang=""><span><span>Memory module width is measured by the number of bits that can be transferred. Memory began in 8-bit varieties, but has increased to 16 bits, 32 bits, and now 64 bits in current systems. Memory must be added in banks to ensure the width equals the width of the memory bus. For example, if you need 64 bits and a single module offers 64 bits, then it will have one module in the bank. Dual-channel memory requires double the amount, therefore two 64-bit (128 bit) DIMMs are needed in the banks, while three are required for triple-channel, as was mentioned earlier.</span></span></p>
+<p id="N10696" lang=""><span>記憶體模塊的寬度由可傳輸的位數決定。內存最初以8位形式出現，但在當前系統中已增加到16位，32位和現在的64位。必須以存儲體的形式添加內存，以確保其寬度等於內存總線的寬度。例如，如果您需要64位，而單個模塊提供64位，則庫中將只有一個模塊。如前所述，雙通道內存需要兩倍的存儲量，因此存儲庫中需要兩個64位（128位）DIMM，而三通道則需要三個。</span></p>
+<h3 contenteditable="true" lang=""><span title="Quick scroll up">Parity and ECC&gt;<span>奇偶校驗和ECC</span></span></h3>
+<p id="N106A9" lang="">Parity is used to perform basic error checking and to ensure the memory contents are reliable. This memory is slower than non-parity, but adds the reliability needed for servers and certain desktop workstations.</p>
+<p id="N106AC" lang="">Parity checking is a rather simple method of detecting memory errors, without any correction capabilities. Parity is signified in a single bit of data that is added to the transmitted data string. If the module normally would have seven bits of data, an eighth is added as the parity bit. If the module normally would have eight chips for data, a ninth chip is added for parity.</p>
+<p id="N106AF" lang="">Every byte has a parity bit associated with it. In the case that seven bits make up the original data, there are eight total bits transmitted (seven original data bits plus one parity bit). In the case that eight bits make up the original data, a total of nine bits are transmitted (eight data bits plus one parity bit). The parity bit is set at write time, and then calculated and compared at read time to determine if any of the bits have changed since the data was stored. This type of checking is limited to detection of single bit errors. If two bits have been altered, the parity check will “pass,” and the error is allowed to possibly corrupt the data.</p>
+<p id="N106B2" lang="">Parity checking can be implemented either as “0” parity or “1” parity. When the byte is stored, the number of zeros (or ones, if “1” parity is selected) is added up. The result is stored in the parity bit – “1” if odd, “0” if even. When that byte is read from memory, the bits are again counted and the result is compared against what was stored in the parity bit. A match means that the data was not changed from when it was stored (or that two bits were altered in such a way that the result is the same).</p>
+<p id="N106B5" lang="">The process to determine the parity bit is the same, regardless of the number of original data bits transmitted. Typically, there are either seven or eight bits of original data.</p>
+<p id="N106B8" lang="">The parity bit is determined by counting the number of “1” bits in a data string.</p>
+<p lang=""></p>
+<p id="N106A9" lang=""><span><span>奇偶校驗用於執行基本的錯誤檢查並確保內存內容可靠。</span><span>此內存比非奇偶校驗慢，但增加了服務器和某些台式機工作站所需的可靠性。</span></span></p>
+<p id="N106AC" lang=""><span><span>奇偶校驗是一種檢測內存錯誤的相當簡單的方法，沒有任何校正功能。</span><span>奇偶校驗在添加到傳輸數據字符串的單個數據位中表示。</span><span>如果模塊通常具有七個數據位，則將八分之一添加為奇偶校驗位。</span><span>如果模塊通常有八個芯片用於數據，則添加第九個芯片以實現奇偶校驗。</span></span></p>
+<p id="N106AF" lang=""><span><span>每個字節都有一個與之關聯的奇偶校驗位。</span><span>在七位組成原始數據的情況下，總共傳輸了八位（七位原始數據位加一個奇偶校驗位）。</span><span>在八位組成原始數據的情況下，總共傳輸九位（八位數據位加一位奇偶校驗位）。</span><span>奇偶校驗位在寫入時設置，然後在讀取時進行計算和比較，以確定自存儲數據以來是否有任何位發生了更改。</span><span>這種類型的檢查僅限於檢測單個位錯誤。</span><span>如果更改了兩位，則奇偶校驗將“通過”，並且允許該錯誤可能破壞數據。</span></span></p>
+<p id="N106B2" lang=""><span><span>奇偶校驗可以實現為“ 0”奇偶校驗或“ 1”奇偶校驗。</span><span>存儲字節時，將加零（如果選擇了“ 1”奇偶校驗，則為零）的數目。</span><span>結果存儲在奇偶校驗位中-如果為奇數，則為“ 1”；如果為偶數，則為“ 0”。</span><span>當從內存中讀取該字節時，將再次對這些位進行計數，並將結果與奇偶校驗位中存儲的結果進行比較。</span><span>匹配表示數據從存儲時起就沒有改變（或以結果相同的方式更改了兩位）。</span></span></p>
+<p id="N106B5" lang=""><span><span>不管發送的原始數據位數如何，確定奇偶校驗位的過程都是相同的。</span><span>通常，原始數據有七位或八位。</span></span></p>
+<p id="N106B8" lang=""><span><span>奇偶校驗位是通過對數據字符串中“ 1”位的數量進行計數來確定的。</span></span></p>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<thead>
+<tr>
+<th align="center" colspan="2" lang="">Set parity bit to:</th>
+</tr>
+<tr>
+<th lang=""></th>
+<th lang="">Even parity</th>
+<th lang="">Odd parity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="e">
+<th lang="">Even number of “1” bits</th>
+<td align="center" lang="">0</td>
+<td align="center" lang="">1</td>
+</tr>
+<tr>
+<th lang="">Odd number of “1” bits</th>
+<td align="center" lang="">1</td>
+<td align="center" lang="">0</td>
+</tr>
+</tbody>
+</table>
+<div class="examplewrap">
+<div class="exHead">
+<br/><span title="Quick scroll up">Single-Sided and Double-Sided Memory </span><span title="快速向上滾動"><span>單面和雙面存儲器</span></span>
+<p id="N1080F" lang="">Memory can be single-sided or double-sided. The benefit of double-sided modules is that a higher amount of storage can fit on a single chip and into a single slot. Some motherboards support double-sided SIMMs, but others do not, so it is important to check the motherboard’s manual for guidance. To determine if the module is double-sided, simply look at both sides. If chips are soldered on both sides, it is a double-sided SIMM.<span>Installing memory is a common computer upgrade and a very easy task to perform. Memory modules are installed as “sticks” (or modules) of memory into the “slots” on the motherboard.</span></p>
+<p lang=""><span><span>內存可以是單面或雙面的。</span><span>雙面模塊的好處在於，單個芯片和單個插槽中可以容納更多的存儲空間。</span><span>有些主板支持雙面SIMM，而其他主板則不支持，因此，請務必仔細閱讀主板手冊以獲取指導。</span><span>要確定模塊是否雙面，只需查看一下雙面即可。</span><span>如果芯片的兩面都焊接，則為雙面SIMM。安裝內存是計算機的常見升級，並且是很容易執行的任務。<span>內存模塊作為內存的“棒”（或模塊）安裝在主板上的“插槽”中。</span></span></span></p>
+<p lang=""><span>     <img alt="Photograph of memory modules or “sticks.”" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH06/webcontent/PCH06/image8.png"/></span></p>
+</div>
+</div>
 <h2>Python 指令集</h2>
 <h3>for 語法</h3>
 <h3>if 語法</h3>
