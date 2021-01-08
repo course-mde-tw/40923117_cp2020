@@ -87,7 +87,7 @@
 <h3><span><span>Memory Module Width 記憶體模塊寬度</span></span></h3>
 <p lang=""><span><span>Memory module width is measured by the number of bits that can be transferred. Memory began in 8-bit varieties, but has increased to 16 bits, 32 bits, and now 64 bits in current systems. Memory must be added in banks to ensure the width equals the width of the memory bus. For example, if you need 64 bits and a single module offers 64 bits, then it will have one module in the bank. Dual-channel memory requires double the amount, therefore two 64-bit (128 bit) DIMMs are needed in the banks, while three are required for triple-channel, as was mentioned earlier.</span></span></p>
 <p id="N10696" lang=""><span>記憶體模塊的寬度由可傳輸的位數決定。內存最初以8位形式出現，但在當前系統中已增加到16位，32位和現在的64位。必須以存儲體的形式添加內存，以確保其寬度等於內存總線的寬度。例如，如果您需要64位，而單個模塊提供64位，則庫中將只有一個模塊。如前所述，雙通道內存需要兩倍的存儲量，因此存儲庫中需要兩個64位（128位）DIMM，而三通道則需要三個。</span></p>
-<h3 contenteditable="true" lang=""><span title="Quick scroll up">Parity and ECC&gt;<span>奇偶校驗和ECC</span></span></h3>
+<h3 contenteditable="true" lang=""><span title="Quick scroll up">Parity and ECC <span>奇偶校驗和ECC</span></span></h3>
 <p id="N106A9" lang="">Parity is used to perform basic error checking and to ensure the memory contents are reliable. This memory is slower than non-parity, but adds the reliability needed for servers and certain desktop workstations.</p>
 <p id="N106AC" lang="">Parity checking is a rather simple method of detecting memory errors, without any correction capabilities. Parity is signified in a single bit of data that is added to the transmitted data string. If the module normally would have seven bits of data, an eighth is added as the parity bit. If the module normally would have eight chips for data, a ninth chip is added for parity.</p>
 <p id="N106AF" lang="">Every byte has a parity bit associated with it. In the case that seven bits make up the original data, there are eight total bits transmitted (seven original data bits plus one parity bit). In the case that eight bits make up the original data, a total of nine bits are transmitted (eight data bits plus one parity bit). The parity bit is set at write time, and then calculated and compared at read time to determine if any of the bits have changed since the data was stored. This type of checking is limited to detection of single bit errors. If two bits have been altered, the parity check will “pass,” and the error is allowed to possibly corrupt the data.</p>
@@ -126,11 +126,30 @@
 </tbody>
 </table>
 <div class="examplewrap">
-<div class="exHead">
-<br/><span title="Quick scroll up">Single-Sided and Double-Sided Memory </span><span title="快速向上滾動"><span>單面和雙面存儲器</span></span>
+<div class="exHead"><br/><span title="Quick scroll up">Single-Sided and Double-Sided Memory </span><span title="快速向上滾動"><span>單面和雙面存儲器</span></span>
 <p id="N1080F" lang="">Memory can be single-sided or double-sided. The benefit of double-sided modules is that a higher amount of storage can fit on a single chip and into a single slot. Some motherboards support double-sided SIMMs, but others do not, so it is important to check the motherboard’s manual for guidance. To determine if the module is double-sided, simply look at both sides. If chips are soldered on both sides, it is a double-sided SIMM.<span>Installing memory is a common computer upgrade and a very easy task to perform. Memory modules are installed as “sticks” (or modules) of memory into the “slots” on the motherboard.</span></p>
+<p id="N10698" lang="">The process of installing memory sticks is fairly easy, but caution and precision are necessary. To install memory sticks (or modules):</p>
+<ol lang="">
+<li lang="">Always ensure you take proper ESD (electrostatic discharge) protection measures to ensure both the motherboard and memory modules are not harmed during installation.</li>
+<li lang="">Turn off the computer and unplug the power cord.</li>
+<li lang="">Open the case and begin the installation of the memory sticks. Always hold the memory sticks by the sides of the chips and never by the gold contacts.</li>
+<li lang="">Line up the memory module’s connector with the slot on the motherboard.</li>
+<li lang="">Verify that the locking tabs are in the open position.</li>
+<li lang="">Push the module straight down until the tabs swivel to the locking position (this takes force).</li>
+</ol>
+<p id="N106B0" lang="">Important note: Never touch the gold connectors on the modules! Corrosion of the contacts can occur, or the module may be damaged due to electrostatic discharge.</p>
 <p lang=""><span><span>內存可以是單面或雙面的。</span><span>雙面模塊的好處在於，單個芯片和單個插槽中可以容納更多的存儲空間。</span><span>有些主板支持雙面SIMM，而其他主板則不支持，因此，請務必仔細閱讀主板手冊以獲取指導。</span><span>要確定模塊是否雙面，只需查看一下雙面即可。</span><span>如果芯片的兩面都焊接，則為雙面SIMM。安裝內存是計算機的常見升級，並且是很容易執行的任務。<span>內存模塊作為內存的“棒”（或模塊）安裝在主板上的“插槽”中。</span></span></span></p>
 <p lang=""><span>     <img alt="Photograph of memory modules or “sticks.”" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH06/webcontent/PCH06/image8.png"/></span></p>
+<p id="N10698" lang=""><span>安裝記憶棒的過程相當容易，但是必須謹慎且精確。要安裝記憶棒（或模塊）：</span></p>
+<ol lang="">
+<li lang=""><span><span>始終確保採取適當的ESD（靜電釋放）保護措施，以確保在安裝過程中不會損壞主板和內存模塊。</span></span></li>
+<li lang=""><span><span>關閉計算機電源，然後拔下電源線。</span></span></li>
+<li lang=""><span><span>打開外殼，開始安裝記憶棒。</span><span>始終將記憶棒放在芯片的側面，而不要緊握金觸點。</span></span></li>
+<li lang=""><span><span>將內存模塊的連接器與主板上的插槽對齊。</span></span></li>
+<li lang=""><span><span>確認鎖定卡舌處於打開位置。</span></span></li>
+<li lang=""><span><span>垂直向下推動模塊，直到卡舌旋轉到鎖定位置（需要用力）。</span></span></li>
+</ol>
+<p id="N106B0" lang=""><span><span>重要說明：切勿觸摸模塊上的金色連接器！</span><span>觸點可能會腐蝕，或者由於靜電放電會損壞模塊</span></span></p>
 </div>
 </div>
 <h2>Python 指令集</h2>
