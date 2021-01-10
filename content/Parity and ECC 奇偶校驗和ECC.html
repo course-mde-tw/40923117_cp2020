@@ -122,7 +122,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a><li class='has-children'><a href='Ahoy!.html'>Ahoy!</a><ul class='dropdown'><li class='has-children'><a href='Date.html'>Date</a><ul class='dropdown'><li><a href='W1.html'>W1</a><li><a href='W2.html'>W2</a><li><a href='W3.html'>W3</a><li><a href='W5.html'>W5</a></li></ul><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='RAM Basics RAM基本運作原理.html'>RAM Basics RAM基本運作原理</a><li><a href='Memory Modules 記憶體模組.html'>Memory Modules 記憶體模組</a><li><a href='Classifying Memory 記憶體分類.html'>Classifying Memory 記憶體分類</a><li><a href='基於主板確定內存類型.html'>基於主板確定內存類型</a><li><a href='Memory Module Width 記憶體模塊寬度.html'>Memory Module Width 記憶體模塊寬度</a><li><a href='Parity and ECC 奇偶校驗和ECC.html'>Parity and ECC 奇偶校驗和ECC</a></li></ul><li class='has-children'><a href='Python 指令集.html'>Python 指令集</a><ul class='dropdown'><li><a href='for 語法.html'>for 語法</a><li><a href='if 語法.html'>if 語法</a></li>
+                     <li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a><li class='has-children'><a href='Ahoy!.html'>Ahoy!</a><ul class='dropdown'><li class='has-children'><a href='Date.html'>Date</a><ul class='dropdown'><li><a href='W1.html'>W1</a><li><a href='W2.html'>W2</a><li><a href='W3.html'>W3</a><li><a href='W5.html'>W5</a></li></ul><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='RAM Basics RAM基本運作原理.html'>RAM Basics RAM基本運作原理</a><li><a href='Memory Modules 記憶體模組.html'>Memory Modules 記憶體模組</a><li><a href='Classifying Memory 記憶體分類.html'>Classifying Memory 記憶體分類</a><li><a href='基於主板確定內存類型.html'>基於主板確定內存類型</a><li><a href='Memory Module Width 記憶體模塊寬度.html'>Memory Module Width 記憶體模塊寬度</a><li><a href='Parity and ECC 奇偶校驗和ECC.html'>Parity and ECC 奇偶校驗和ECC</a><li><a href='BIOS and CMOS.html'>BIOS and CMOS</a></li></ul><li class='has-children'><a href='Python 指令集.html'>Python 指令集</a><ul class='dropdown'><li><a href='for 語法.html'>for 語法</a><li><a href='if 語法.html'>if 語法</a></li>
                       </ul>
                 </nav>
               </div>
@@ -133,7 +133,7 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Memory Module Width 記憶體模塊寬度 << <a href='Memory Module Width 記憶體模塊寬度.html'>Previous</a> <a href='Python 指令集.html'>Next</a> >> Python 指令集<br /><h1>Parity and ECC 奇偶校驗和ECC</h1>
+    <div id="tipue_search_content">Memory Module Width 記憶體模塊寬度 << <a href='Memory Module Width 記憶體模塊寬度.html'>Previous</a> <a href='BIOS and CMOS.html'>Next</a> >> BIOS and CMOS<br /><h1>Parity and ECC 奇偶校驗和ECC</h1>
 <p id="N106A9" lang="">Parity is used to perform basic error checking and to ensure the memory contents are reliable. This memory is slower than non-parity, but adds the reliability needed for servers and certain desktop workstations.</p>
 <p id="N106AC" lang="">Parity checking is a rather simple method of detecting memory errors, without any correction capabilities. Parity is signified in a single bit of data that is added to the transmitted data string. If the module normally would have seven bits of data, an eighth is added as the parity bit. If the module normally would have eight chips for data, a ninth chip is added for parity.</p>
 <p id="N106AF" lang="">Every byte has a parity bit associated with it. In the case that seven bits make up the original data, there are eight total bits transmitted (seven original data bits plus one parity bit). In the case that eight bits make up the original data, a total of nine bits are transmitted (eight data bits plus one parity bit). The parity bit is set at write time, and then calculated and compared at read time to determine if any of the bits have changed since the data was stored. This type of checking is limited to detection of single bit errors. If two bits have been altered, the parity check will “pass,” and the error is allowed to possibly corrupt the data.</p>
@@ -171,8 +171,7 @@ img.add_border {
 </tr>
 </tbody>
 </table>
-<div class="examplewrap">
-<div class="exHead"><br/><span title="Quick scroll up">Single-Sided and Double-Sided Memory </span><span title="快速向上滾動"><span>單面和雙面存儲器</span></span>
+<div class="examplewrap">single-Sided and DSinouble-Sided Memory <span>單面和雙面存儲器</span>
 <p id="N1080F" lang="">Memory can be single-sided or double-sided. The benefit of double-sided modules is that a higher amount of storage can fit on a single chip and into a single slot. Some motherboards support double-sided SIMMs, but others do not, so it is important to check the motherboard’s manual for guidance. To determine if the module is double-sided, simply look at both sides. If chips are soldered on both sides, it is a double-sided SIMM.<span>Installing memory is a common computer upgrade and a very easy task to perform. Memory modules are installed as “sticks” (or modules) of memory into the “slots” on the motherboard.</span></p>
 <p id="N10698" lang="">The process of installing memory sticks is fairly easy, but caution and precision are necessary. To install memory sticks (or modules):</p>
 <ol lang="">
@@ -196,9 +195,7 @@ img.add_border {
 <li lang=""><span><span>垂直向下推動模塊，直到卡舌旋轉到鎖定位置（需要用力）。</span></span></li>
 </ol>
 <p id="N106B0" lang=""><span><span>重要說明：切勿觸摸模塊上的金色連接器！</span><span>觸點可能會腐蝕，或者由於靜電放電會損壞模塊</span></span></p>
-</div>
-</div>
-<br />Memory Module Width 記憶體模塊寬度 << <a href='Memory Module Width 記憶體模塊寬度.html'>Previous</a> <a href='Python 指令集.html'>Next</a> >> Python 指令集</div>
+<br />Memory Module Width 記憶體模塊寬度 << <a href='Memory Module Width 記憶體模塊寬度.html'>Previous</a> <a href='BIOS and CMOS.html'>Next</a> >> BIOS and CMOS</div>
         
     <!-- footer -->
       <div class="container">
