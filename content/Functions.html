@@ -133,69 +133,27 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Memory Module Width 記憶體模塊寬度 << <a href='Memory Module Width 記憶體模塊寬度.html'>Previous</a> <a href='BIOS and CMOS.html'>Next</a> >> BIOS and CMOS<br /><h1>Parity and ECC 奇偶校驗和ECC</h1>
-<p id="N106A9" lang="">Parity is used to perform basic error checking and to ensure the memory contents are reliable. This memory is slower than non-parity, but adds the reliability needed for servers and certain desktop workstations.</p>
-<p id="N106AC" lang="">Parity checking is a rather simple method of detecting memory errors, without any correction capabilities. Parity is signified in a single bit of data that is added to the transmitted data string. If the module normally would have seven bits of data, an eighth is added as the parity bit. If the module normally would have eight chips for data, a ninth chip is added for parity.</p>
-<p id="N106AF" lang="">Every byte has a parity bit associated with it. In the case that seven bits make up the original data, there are eight total bits transmitted (seven original data bits plus one parity bit). In the case that eight bits make up the original data, a total of nine bits are transmitted (eight data bits plus one parity bit). The parity bit is set at write time, and then calculated and compared at read time to determine if any of the bits have changed since the data was stored. This type of checking is limited to detection of single bit errors. If two bits have been altered, the parity check will “pass,” and the error is allowed to possibly corrupt the data.</p>
-<p id="N106B2" lang="">Parity checking can be implemented either as “0” parity or “1” parity. When the byte is stored, the number of zeros (or ones, if “1” parity is selected) is added up. The result is stored in the parity bit – “1” if odd, “0” if even. When that byte is read from memory, the bits are again counted and the result is compared against what was stored in the parity bit. A match means that the data was not changed from when it was stored (or that two bits were altered in such a way that the result is the same).</p>
-<p id="N106B5" lang="">The process to determine the parity bit is the same, regardless of the number of original data bits transmitted. Typically, there are either seven or eight bits of original data.</p>
-<p id="N106B8" lang="">The parity bit is determined by counting the number of “1” bits in a data string.</p>
-<p lang=""></p>
-<p id="N106A9" lang=""><span><span>奇偶校驗用於執行基本的錯誤檢查並確保內存內容可靠。</span><span>此內存比非奇偶校驗慢，但增加了服務器和某些台式機工作站所需的可靠性。</span></span></p>
-<p id="N106AC" lang=""><span><span>奇偶校驗是一種檢測內存錯誤的相當簡單的方法，沒有任何校正功能。</span><span>奇偶校驗在添加到傳輸數據字符串的單個數據位中表示。</span><span>如果模塊通常具有七個數據位，則將八分之一添加為奇偶校驗位。</span><span>如果模塊通常有八個芯片用於數據，則添加第九個芯片以實現奇偶校驗。</span></span></p>
-<p id="N106AF" lang=""><span><span>每個字節都有一個與之關聯的奇偶校驗位。</span><span>在七位組成原始數據的情況下，總共傳輸了八位（七位原始數據位加一個奇偶校驗位）。</span><span>在八位組成原始數據的情況下，總共傳輸九位（八位數據位加一位奇偶校驗位）。</span><span>奇偶校驗位在寫入時設置，然後在讀取時進行計算和比較，以確定自存儲數據以來是否有任何位發生了更改。</span><span>這種類型的檢查僅限於檢測單個位錯誤。</span><span>如果更改了兩位，則奇偶校驗將“通過”，並且允許該錯誤可能破壞數據。</span></span></p>
-<p id="N106B2" lang=""><span><span>奇偶校驗可以實現為“ 0”奇偶校驗或“ 1”奇偶校驗。</span><span>存儲字節時，將加零（如果選擇了“ 1”奇偶校驗，則為零）的數目。</span><span>結果存儲在奇偶校驗位中-如果為奇數，則為“ 1”；如果為偶數，則為“ 0”。</span><span>當從內存中讀取該字節時，將再次對這些位進行計數，並將結果與奇偶校驗位中存儲的結果進行比較。</span><span>匹配表示數據從存儲時起就沒有改變（或以結果相同的方式更改了兩位）。</span></span></p>
-<p id="N106B5" lang=""><span><span>不管發送的原始數據位數如何，確定奇偶校驗位的過程都是相同的。</span><span>通常，原始數據有七位或八位。</span></span></p>
-<p id="N106B8" lang=""><span><span>奇偶校驗位是通過對數據字符串中“ 1”位的數量進行計數來確定的。</span></span></p>
-<table align="center" cellspacing="0" class="wbtable" lang="">
-<thead>
-<tr>
-<th align="center" colspan="2" lang="">Set parity bit to:</th>
-</tr>
-<tr>
-<th lang=""></th>
-<th lang="">Even parity</th>
-<th lang="">Odd parity</th>
-</tr>
-</thead>
-<tbody>
-<tr class="e">
-<th lang="">Even number of “1” bits</th>
-<td align="center" lang="">0</td>
-<td align="center" lang="">1</td>
-</tr>
-<tr>
-<th lang="">Odd number of “1” bits</th>
-<td align="center" lang="">1</td>
-<td align="center" lang="">0</td>
-</tr>
-</tbody>
-</table>
-<div class="examplewrap">single-Sided and DSinouble-Sided Memory <span>單面和雙面存儲器</span>
-<p id="N1080F" lang="">Memory can be single-sided or double-sided. The benefit of double-sided modules is that a higher amount of storage can fit on a single chip and into a single slot. Some motherboards support double-sided SIMMs, but others do not, so it is important to check the motherboard’s manual for guidance. To determine if the module is double-sided, simply look at both sides. If chips are soldered on both sides, it is a double-sided SIMM.<span>Installing memory is a common computer upgrade and a very easy task to perform. Memory modules are installed as “sticks” (or modules) of memory into the “slots” on the motherboard.</span></p>
-<p id="N10698" lang="">The process of installing memory sticks is fairly easy, but caution and precision are necessary. To install memory sticks (or modules):</p>
-<ol lang="">
-<li lang="">Always ensure you take proper ESD (electrostatic discharge) protection measures to ensure both the motherboard and memory modules are not harmed during installation.</li>
-<li lang="">Turn off the computer and unplug the power cord.</li>
-<li lang="">Open the case and begin the installation of the memory sticks. Always hold the memory sticks by the sides of the chips and never by the gold contacts.</li>
-<li lang="">Line up the memory module’s connector with the slot on the motherboard.</li>
-<li lang="">Verify that the locking tabs are in the open position.</li>
-<li lang="">Push the module straight down until the tabs swivel to the locking position (this takes force).</li>
-</ol>
-<p id="N106B0" lang="">Important note: Never touch the gold connectors on the modules! Corrosion of the contacts can occur, or the module may be damaged due to electrostatic discharge.</p>
-<p lang=""><span><span>內存可以是單面或雙面的。</span><span>雙面模塊的好處在於，單個芯片和單個插槽中可以容納更多的存儲空間。</span><span>有些主板支持雙面SIMM，而其他主板則不支持，因此，請務必仔細閱讀主板手冊以獲取指導。</span><span>要確定模塊是否雙面，只需查看一下雙面即可。</span><span>如果芯片的兩面都焊接，則為雙面SIMM。安裝內存是計算機的常見升級，並且是很容易執行的任務。<span>內存模塊作為內存的“棒”（或模塊）安裝在主板上的“插槽”中。</span></span></span></p>
-<p lang=""><span>     <img alt="Photograph of memory modules or “sticks.”" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH06/webcontent/PCH06/image8.png"/></span></p>
-<p id="N10698" lang=""><span>安裝記憶棒的過程相當容易，但是必須謹慎且精確。要安裝記憶棒（或模塊）：</span></p>
-<ol lang="">
-<li lang=""><span><span>始終確保採取適當的ESD（靜電釋放）保護措施，以確保在安裝過程中不會損壞主板和內存模塊。</span></span></li>
-<li lang=""><span><span>關閉計算機電源，然後拔下電源線。</span></span></li>
-<li lang=""><span><span>打開外殼，開始安裝記憶棒。</span><span>始終將記憶棒放在芯片的側面，而不要緊握金觸點。</span></span></li>
-<li lang=""><span><span>將內存模塊的連接器與主板上的插槽對齊。</span></span></li>
-<li lang=""><span><span>確認鎖定卡舌處於打開位置。</span></span></li>
-<li lang=""><span><span>垂直向下推動模塊，直到卡舌旋轉到鎖定位置（需要用力）。</span></span></li>
-</ol>
-<p id="N106B0" lang=""><span><span>重要說明：切勿觸摸模塊上的金色連接器！</span><span>觸點可能會腐蝕，或者由於靜電放電會損壞模塊</span></span></p>
-<br />Memory Module Width 記憶體模塊寬度 << <a href='Memory Module Width 記憶體模塊寬度.html'>Previous</a> <a href='BIOS and CMOS.html'>Next</a> >> BIOS and CMOS</div>
+    <div id="tipue_search_content">Random numbers, continued << <a href='Random numbers, continued.html'>Previous</a> <a href='Reusable functions.html'>Next</a> >> Reusable functions<br /><h1>Functions</h1>
+<p>One of the tools programming gives us is the ability to break down problems into easier (or perhaps previously solved) or reusable subproblems. It is good practice to have a function have a single purpose, and the name of that function should hint at it’s purpose in some way.</p>
+<p>Most programming languages have this idea of a function, subroutine, or subprogram. In Python, a function is a programming construct that allows exactly that.</p>
+<p>Let’s look at a simple example:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="k">def</span> <span class="nf">get_integer</span><span class="p">():</span>
+    <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Give me a number: "</span><span class="p">))</span></code></pre>
+</figure>
+<p>In this small example, we used the same code that asks a user for input as a tabbed line underneath this<span> </span><code class="highlighter-rouge">def</code><span> </span>statement. The<span> </span><code class="highlighter-rouge">def</code><span> </span>means that everything tabbed underneath is a function. The name<span> </span><code class="highlighter-rouge">get_integer()</code><span> </span>is just a name that I (the programmer) made up. If I just include this code inside a Python file and run it, nothing will happen - all I have done so far is wrapped my code inside of a function; I never told my program to actually RUN my function.</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="k">def</span> <span class="nf">get_integer</span><span class="p">():</span>
+    <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Give me a number: "</span><span class="p">))</span>
+
+  <span class="n">age</span> <span class="o">=</span> <span class="n">get_integer</span><span class="p">()</span>
+  <span class="n">school_year</span> <span class="o">=</span> <span class="n">get_integer</span><span class="p">()</span>
+  <span class="k">if</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">15</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"You are over the age of 15"</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"You are in grade "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">school_year</span><span class="p">))</span></code></pre>
+</figure>
+<p>What I have done here is<span> </span><em>called</em><span> </span>the function (told it to run) by writing<span> </span><code class="highlighter-rouge">age = get_integer()</code>. When this line of code runs, what happens is the program will<span> </span><em>execute</em><span> </span>(run) the function by asking me for a number, then<span> </span><em>returning</em><span> </span>it (giving it back to me) by saving it inside the variable<span> </span><code class="highlighter-rouge">age</code>. Now when I want to ask the user for another number (this time representing the school year), I do the same thing with the variable<span> </span><code class="highlighter-rouge">school_year</code>.</p>
+<br />Random numbers, continued << <a href='Random numbers, continued.html'>Previous</a> <a href='Reusable functions.html'>Next</a> >> Reusable functions</div>
         
     <!-- footer -->
       <div class="container">
